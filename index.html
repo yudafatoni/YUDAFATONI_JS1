@@ -14,14 +14,15 @@
   </head>
 
   <body>
+    <fieldset>
     <div class="nav" style="text-align: center">
-      <hr />
       <h1>TUGAS JS1</h1>
       <h2>Yuda Fatoni_Web_A</h2>
       <hr />
     </div>
 
     <!-- if else nested if -->
+
     <div class="input">
       <h2>If, Else, Nested If</h2>
       <h3>- Masukkan Umur anda</h3>
@@ -34,7 +35,7 @@
     </div>
 
     <!-- switch case  -->
-    <div class="switchcase">
+    <class="switchcase">
       <h2>Switch Case</h2>
       <h3>- Pulau Kelahiran?</h3>
       <select id="pulau" name="pulau" required="">
@@ -51,15 +52,58 @@
 
       <!-- For Statement -->
 
-    <div class="forStatement">
-        <h2>Apa Motivasi Anda?</h2>
+      <div class="forStatement">
+        <h2>For Statement</h2>
         <form id="motivasiForm">
           <input type="text" id="formotivasi" name="motivasi" required />
           <button type="submit">Submit</button>
-          </form>
-          <p id="tampilmotivasi"></p>
-          <script src="/Js/forStatement.js"></script>
-    </div>
+        </form>
+        <p id="tampilmotivasi"></p>
+        <script src="/Js/forStatement.js"></script>
+      </div>
+
+      <!-- while -->
+      <!-- perulangan yang akan di cek/evaluasi terlebih dahulu lalu dilakukan loop  -->
+      <div class="whileDoWhile">
+        <h2>While</h2>
+    <h3>- while</h3>
+    <form id="whileForm">
+        <input type="text" id="whileInput" name="while" placeholder="input kata" />
+        <p>Masukkan Jumlah Perulangan</p>
+        <input type="number" id="no" name="no" required />
+        <button type="submit">Submit</button>
+    </form>
+    <p id="tampilwhile"></p>
+        <script src="/Js/while.js"></script>
+      
+        <!-- DoWhile -->
+        <!-- Perulangan dowhile mirip dengan while hanya sanya perulangan dijalnkan terlebhi dahulu setelah itu baru di cek  -->
+        <form id="formDowhile">
+          <h3>- Dowhile</h3>
+          <input type="text" id="doWhile" name="doWhile" required />
+          <p>Masukkan Jumlah perulangan</p>
+          <input type="number" id="number" name="number" required />
+          <button type="submit">Submit</button>
+      </form>
+      <p id="data"></p>
+      <script src="/Js/doWhile.js"></script>
+      </div>
+
+      <div class="function">
+        <h2>Function</h2>
+          <legend>Input ToDo</legend>
+          <input type="text" name="ToDo" placeholder="Rencana Kegiatan" />
+          <input type="button" onclick="addToDo()" value="Tambah" />
+      </div>
     
+      <div>
+          <ul id="list-ToDo">
+          </ul>
+      </div>
+
+<script src="Js/function.js"></script>
+      </div>
+    </div>
+  </fieldset>
   </body>
 </html>
