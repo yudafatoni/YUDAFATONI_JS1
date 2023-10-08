@@ -4,9 +4,62 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JS1</title>
+
+    <style>
+      body {
+        margin-left: 40px;
+        margin-right: 40px;
+      }
+    </style>
   </head>
+
   <body>
-    <h1>TUGAS JS1</h1>
-    <h2>Tugas javascript</h2>
+    <div class="nav" style="text-align: center">
+      <hr />
+      <h1>TUGAS JS1</h1>
+      <h2>Yuda Fatoni_Web_A</h2>
+      <hr />
+    </div>
+
+    <!-- if else nested if -->
+    <div class="input">
+      <h2>If, Else, Nested If</h2>
+      <h3>- Masukkan Umur anda</h3>
+      <form id="formUmur">
+        <label for="umur">Umur:</label>
+        <input type="number" id="umur" name="umur" required />
+        <button type="submit">Submit</button>
+        <script src="/Js/ifElseNestedif.js"></script>
+      </form>
+    </div>
+
+    <!-- switch case  -->
+    <div class="switchcase">
+      <h2>Switch Case</h2>
+      <h3>- Pulau Kelahiran?</h3>
+      <select id="pulau" name="pulau" required="">
+        <option value="Sumatra">Sumatra</option>
+        <option value="Jawa">Jawa</option>
+        <option value="Kalimantan">Kalimantan</option>
+        <option value="Sulawesi">Sulawesi</option>
+        <option value="Papua">Papua</option>
+        <option value="...">...?</option>
+      </select>
+      <button type="button" onclick="tampilkan()">Tampilkan</button>
+      <p id="tampilpulau"></p>
+      <script src="/Js/switchcase.js"></script>
+
+      <!-- For Statement -->
+
+    <div class="forStatement">
+        <h2>Apa Motivasi Anda?</h2>
+        <form id="motivasiForm">
+          <input type="text" id="formotivasi" name="motivasi" required />
+          <button type="submit">Submit</button>
+          </form>
+          <p id="tampilmotivasi"></p>
+          <script src="/Js/forStatement.js"></script>
+    </div>
+    
   </body>
 </html>
